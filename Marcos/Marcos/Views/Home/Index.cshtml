@@ -1,0 +1,31 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+    Layout = "~/Views/Shared/_LayoutHome.cshtml";
+}
+
+<div class="jumbotron">
+    <h1>Welcome to MARCOS!</h1>
+    <p class="lead">This is a Marshall University sponsored web application that helps graduate students and fraculty
+    connect with one another for research collaberations, questions and answers, and funding opportunities.</p>
+    <p><a href="~/Home/About" class="btn btn-primary btn-lg">Learn more about MARCOS &raquo;</a></p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Getting started</h2>
+        <p>
+            If you are new to the MARCOS system, feel free to registers for an account. It only takes a couple of minutes.
+        </p>
+        <p><a class="btn btn-default" href="~/Account/Register">Register &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Log in to MARCOS</h2>
+        <p>Already a member of MARCOS? Log in by clicking the button below to gain access to MARCOS many different features.</p>
+        <p><a class="btn btn-default" href="~/Account/Login">Log in &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Guest login</h2>
+        <p>If you are not a registered member of MARCOS, feel free to browse the site as a guest and enjoy many of its features for free.</p>
+        <p><a class="btn btn-default" href="~/MARCOS/MARCOSHome">Browse &raquo;</a></p>
+    </div>
+</div>

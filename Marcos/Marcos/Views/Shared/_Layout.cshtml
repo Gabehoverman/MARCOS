@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - MARCOS</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <script src="http://muwww-new.marshall.edu/bootstrap/js/modernizr-2.6.1.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="http://muwww-new.marshall.edu/admit/wp-content/themes/roots/js/libs/jquery-1.7.2.min.js"><\/script>')</script>
+    <link rel="stylesheet" href="http://muwww-new.marshall.edu/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="http://muwww-new.marshall.edu/bootstrap/css/bootstrap-responsive.css">
+    <script type='text/javascript' src='http://www.google.com/jsapi?ver=1.0'></script>
+    <script type='text/javascript' src='http://muwww-new.marshall.edu/bootstrap/js/bootstrap.min.js'></script>
+    <script type='text/javascript' src='http://muwww-new.marshall.edu/bootstrap/js/jquery.flexslider-min.js'></script>
+
+</head>
+<body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("MARCOS", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Home", "MARCOSHome", "MARCOS")</li>
+                    <li>@Html.ActionLink("Questions", "Questions", "MARCOS")</li>
+                    <li>@Html.ActionLink("Search", "Search", "MARCOS")</li>
+                </ul>
+                @Html.Partial("_LoginPartial")
+            </div>
+        </div>
+    </div>
+    <div id="wrapper" class="clearfix">
+        <div id="wrap" class="container" role="document">
+            @RenderBody()
+            <hr />
+            <div class="footer-push">&nbsp;</div>
+        </div>
+    </div>
+    <!-- <footer>
+         <p>&copy; @DateTime.Now.Year - MARCOS</p>
+     </footer>-->
+    <footer id="content-info" class="footer" role="contentinfo">
+        <div class="footer-inner">
+            <div class="container">
+                <div class="row">
+                    <div class="span3"><img class="aligncenter" src="http://muwww-new.marshall.edu/admit/wp-content/themes/roots/img/mu_logo_footer.png" alt="Marshall University logo"></div>
+                    <div class="span6">
+                        <p class="aligncenter">
+                            <small>
+                                Marshall University • One John Marshall Drive • Huntington, WV 25755 • <a href="tel:18006423463">1-800-642-3463</a><br>
+                                <a href="http://www.ncahlc.org/component/com_directory/Action,ShowBasic/Itemid,/instid,1665/">Accreditation Info</a> • <a href="http://www.marshall.edu/mumobile/">Mobile App</a>
+                            </small>
+                        </p>
+                    </div>
+                    <div class="span3">
+                        <ul class="social_ico">
+                            <li class="ico-footer_mailoverseer"><a href="mailto:">e-Mail the Overseer of this Website</a></li>
+                            <li class="ico-rss_ico"><a href="http://muweb.marshall.edu/wpmu/connected/rss-feed-directory/">RSS Feed Directory</a></li>
+                            <li class="ico-youtube_ico"><a href="http://www.youtube.com/herdvideo">Youtube</a></li>
+                            <li class="ico-smugmug_ico"><a href="http://muphotos.marshall.edu/">Smug Mug</a></li>
+                            <li class="ico-twitter_ico"><a href="http://muweb.marshall.edu/twitter">Twitter</a></li>
+                            <li class="ico-facebook_ico"><a href="http://www.facebook.com/marshallu">Facebook</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript">
+        $(window).load(function () {
+            $('#contentslider').flexslider({ controlNav: false, prevText: "<span>Previous</span>", nextText: "<span>Next</span>" });
+        });
+    </script>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
