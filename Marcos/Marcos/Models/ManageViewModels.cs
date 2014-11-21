@@ -39,6 +39,39 @@ namespace Marcos.Models
         public string ConfirmPassword { get; set; }
     }
 
+    public class SetInterestViewMode1
+    {
+        [Required]
+        [DataType(DataType.Text)]
+        [Display(Name = "New interest")]
+        public string newInterest { get; set; }
+    }
+
+    public class ChangeInterestViewMode1
+    {
+        [Required]
+        [DataType(DataType.Text)]
+        [Display(Name = "Current Interest")]
+        public string newInterest { get; set; }
+
+    }
+
+    public class SetFieldViewMode1
+    {
+        [Required]
+        [DataType(DataType.Text)]
+        [Display(Name = "Current Field")]
+        public string newField { get; set; }
+    }
+
+    public class ChangeFieldViewMode1
+    {
+        [Required]
+        [DataType(DataType.Text)]
+        [Display(Name = "New field")]
+        public string newField { get; set; }
+    }
+
     public class ChangePasswordViewModel
     {
         [Required]

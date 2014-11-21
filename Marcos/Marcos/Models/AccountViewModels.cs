@@ -79,6 +79,17 @@ namespace Marcos.Models
         [Display(Name = "Confirm password")]
         [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; }
+
+        [Required]
+        [DataType(DataType.Text)]
+        [Display(Name = "Field")]
+        public string Field { get; set; }
+
+        [Required]
+        [DataType(DataType.Text)]
+        [Display(Name = "Interest")]
+        public string Interest { get; set; }
+
     }
 
     public class ResetPasswordViewModel

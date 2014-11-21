@@ -311,6 +311,16 @@ namespace Marcos.Controllers
             return result.Succeeded ? RedirectToAction("ManageLogins") : RedirectToAction("ManageLogins", new { Message = ManageMessageId.Error });
         }
 
+        public ActionResult ChangeInterest()
+        {
+            return View();
+        }
+
+        public ActionResult ChangeField()
+        {
+            return View();
+        }
+
 #region Helpers
         // Used for XSRF protection when adding external logins
         private const string XsrfKey = "XsrfId";

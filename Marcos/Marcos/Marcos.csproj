@@ -260,6 +260,8 @@
     <Content Include="Views\MARCOS\Search.cshtml" />
     <Content Include="Views\MARCOS\ViewQuestions.cshtml" />
     <Content Include="Views\MARCOS\PostQuestions.cshtml" />
+    <Content Include="Views\Manage\ChangeInterest.cshtml" />
+    <Content Include="Views\Manage\ChangeField.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

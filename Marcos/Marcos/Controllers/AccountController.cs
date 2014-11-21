@@ -157,6 +157,8 @@ namespace Marcos.Controllers
             {
                 var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
                 var result = await UserManager.CreateAsync(user, model.Password);
+                var interest = await UserManager.CreateAsync(user, model.Interest);
+                var field = await UserManager.CreateAsync(user, model.Field);
                 if (result.Succeeded)
                 {
                     await SignInManager.SignInAsync(user, isPersistent:false, rememberBrowser:false);
